@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#121110" />
+  <title>Vaishnavi Gupta — CSE undergrad & frontend developer</title>
+  <meta
+    name="description"
+    content="Vaishnavi Gupta — Computer science undergraduate and frontend developer building web apps with React, Node.js and Express. Currently seeking SDE roles."
+  />
+  <meta name="author" content="Vaishnavi Gupta" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vaishnavi Gupta — CSE undergrad & frontend developer" />
+  <meta property="og:description" content="Building web apps with React, Node.js and a habit of shipping things that actually work." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/avatar.png" />
+
+  <!-- Fonts: Inter (400/500) + JetBrains Mono (400/500) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="icon" type="image/png" href="assets/avatar.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Scroll progress bar (slim 2px, accent, fixed top) -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Optional minimal fixed top nav -->
+  <nav class="nav" aria-label="Primary">
+    <a href="#hero" class="nav-logo" aria-label="Vaishnavi Gupta — home">VG</a>
+    <ul class="nav-links">
+      <li><a href="#about" data-nav="about">about</a></li>
+      <li><a href="#skills" data-nav="skills">skills</a></li>
+      <li><a href="#projects" data-nav="projects">projects</a></li>
+      <li><a href="#education" data-nav="education">education</a></li>
+      <li><a href="#contact" data-nav="contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- ============================= HERO ============================= -->
+    <section id="hero" class="section hero reveal">
+      <div class="hero-avatar reveal-child">
+        <img
+          src="assets/avatar.png"
+          alt="Illustrated portrait of Vaishnavi Gupta"
+          width="220"
+          height="220"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <div class="hero-content">
+        <p class="hero-role reveal-child">Hello, I'm</p>
+        <h1 class="hero-name reveal-child">Vaishnavi Gupta</h1>
+        <p class="hero-tagline reveal-child">
+          <span class="tagline-ghost" aria-hidden="true">an aspiring Software Development Engineer focused on AI-driven backend systems and problem solving.</span>
+          <span class="tagline-type-wrap">
+            <span id="typed-text"></span><span class="cursor" aria-hidden="true">|</span>
+          </span>
+        </p>
+        <ul class="social-links reveal-child" aria-label="Social links">
+          <li><a href="mailto:programmer.vaishnavi@gmail.com">email</a></li>
+          <li><a href="https://github.com/ProgrammerVaishnavi" target="_blank" rel="noopener noreferrer">github</a></li>
+          <li><a href="https://www.linkedin.com/in/vaishnavi-gupta-6628a526a/" target="_blank" rel="noopener noreferrer">linkedin</a></li>
+          <li><a href="https://leetcode.com/u/ProgrammerVaishnavi04/" target="_blank" rel="noopener noreferrer">leetcode</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= RESUME ============================= -->
+    <div class="section resume-section reveal">
+      <a href="VaishnaviGupta.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">View my resume ↗</a>
+    </div>
+
+    <!-- ============================= ABOUT ============================= -->
+    <section id="about" class="section about reveal">
+      <p class="section-label reveal-child">01 — about</p>
+      <p class="about-bio reveal-child">
+        Computer science undergraduate building full-stack web apps and ML-powered systems
+        with React, FastAPI, and Python. Active LeetCode problem solver skilled in data
+        structures and algorithms. Seeking SDE roles to build impactful products.
+      </p>
+    </section>
+
+    <!-- ============================= SKILLS ============================= -->
+    <section id="skills" class="section skills reveal">
+      <p class="section-label reveal-child">02 — skills</p>
+
+      <div class="skill-group reveal-child">
+        <p class="skill-category">Languages</p>
+        <ul class="pill-list">
+          <li class="pill">JavaScript</li>
+          <li class="pill">Python</li>
+          <li class="pill">SQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-group reveal-child">
+        <p class="skill-category">Web tech</p>
+        <ul class="pill-list">
+          <li class="pill">React</li>
+          <li class="pill">Node.js</li>
+          <li class="pill">Express</li>
+          <li class="pill">REST APIs</li>
+          <li class="pill">HTML/CSS</li>
+        </ul>
+      </div>
+
+      <div class="skill-group reveal-child">
+        <p class="skill-category">Databases</p>
+        <ul class="pill-list">
+          <li class="pill">MongoDB</li>
+          <li class="pill">MySQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-group reveal-child">
+        <p class="skill-category">Tools</p>
+        <ul class="pill-list">
+          <li class="pill">Git/GitHub</li>
+          <li class="pill">VS Code</li>
+          <li class="pill">Linux/Windows</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= PROJECTS ============================= -->
+    <section id="projects" class="section projects reveal">
+      <p class="section-label reveal-child">03 — projects</p>
+
+      <div class="project-grid">
+        <article class="project-card reveal-child">
+          <div class="project-head">
+            <h3 class="project-title">ChurnSight</h3>
+            <span class="project-year">2026</span>
+          </div>
+          <p class="project-desc">
+            Customer churn prediction dashboard with ML-powered risk scoring and analytics.
+          </p>
+          <ul class="project-tech">
+            <li>FastAPI</li>
+            <li>React</li>
+            <li>Vite</li>
+            <li>Python</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://churnprediction04.vercel.app/" target="_blank" rel="noopener noreferrer">Live ↗</a>
+            <a href="https://github.com/ProgrammerVaishnavi/Customer-Churn-Prediction" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal-child">
+          <div class="project-head">
+            <h3 class="project-title">Movie Recommendation System</h3>
+            <span class="project-year">2026</span>
+          </div>
+          <p class="project-desc">
+            Content-based movie recommender using TF-IDF cosine similarity with live TMDB metadata.
+          </p>
+          <ul class="project-tech">
+            <li>Streamlit</li>
+            <li>FastAPI</li>
+            <li>Python</li>
+            <li>TMDB API</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://movie-recomedation-system.onrender.com" target="_blank" rel="noopener noreferrer">Live ↗</a>
+            <a href="https://github.com/ProgrammerVaishnavi/Movie-recomedation-system" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal-child">
+          <div class="project-head">
+            <h3 class="project-title">Social Media App</h3>
+            <span class="project-year">Mar–Apr 2026</span>
+          </div>
+          <p class="project-desc">
+            Real-time post creation and management with global state via Context API.
+          </p>
+          <ul class="project-tech">
+            <li>React.js</li>
+            <li>Vite</li>
+            <li>Bootstrap</li>
+            <li>Context API</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://vaishnavi-project-social-media.vercel.app/" target="_blank" rel="noopener noreferrer">Live ↗</a>
+            <a href="https://github.com/ProgrammerVaishnavi/Social_Media" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal-child">
+          <div class="project-head">
+            <h3 class="project-title">Rock Paper Scissors Game</h3>
+            <span class="project-year">Dec 2025 – Mar 2026</span>
+          </div>
+          <p class="project-desc">
+            Computer-generated moves with real-time score tracking and DOM logic.
+          </p>
+          <ul class="project-tech">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/ProgrammerVaishnavi/Rock-paper-scissors" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal-child">
+          <div class="project-head">
+            <h3 class="project-title">Tic-Tac-Toe Game</h3>
+            <span class="project-year">Sep–Oct 2025</span>
+          </div>
+          <p class="project-desc">
+            Two-player game with win detection, turns and a reset feature.
+          </p>
+          <ul class="project-tech">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/ProgrammerVaishnavi/Tic_Tac_Toe" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================= EDUCATION & ACHIEVEMENTS ============================= -->
+    <section id="education" class="section education reveal">
+      <p class="section-label reveal-child">04 — education &amp; achievements</p>
+
+      <div class="timeline">
+        <div class="timeline-row reveal-child">
+          <span class="timeline-date">Nov 2023 – May 2027</span>
+          <div class="timeline-text">
+            <p class="timeline-title">B.Tech CSE, SRMCEM Lucknow (AKTU)</p>
+            <p class="timeline-sub">Computer Science &amp; Engineering, undergraduate</p>
+          </div>
+        </div>
+
+        <div class="timeline-row reveal-child">
+          <span class="timeline-date">2025</span>
+          <div class="timeline-text">
+            <p class="timeline-title">Smart India Hackathon 2025</p>
+            <p class="timeline-sub">Won internal selection round, team of 6</p>
+          </div>
+        </div>
+
+        <div class="timeline-row reveal-child">
+          <span class="timeline-date">2025</span>
+          <div class="timeline-text">
+            <p class="timeline-title">AI/ML for Geodata Analysis — ISRO</p>
+            <p class="timeline-sub">Completed 7.5-hour certification course</p>
+          </div>
+        </div>
+
+        <div class="timeline-row reveal-child">
+          <span class="timeline-date">2024</span>
+          <div class="timeline-text">
+            <p class="timeline-title">Cybersecurity &amp; Ethical Hacking Training</p>
+            <p class="timeline-sub">Sec Tech Creation — hands-on training program</p>
+          </div>
+        </div>
+
+        <div class="timeline-row reveal-child">
+          <span class="timeline-date">2023 – present</span>
+          <div class="timeline-text">
+            <p class="timeline-title">Multiple tech fest wins</p>
+            <p class="timeline-sub">Consistent podium finishes since first year</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACT ============================= -->
+    <section id="contact" class="section contact reveal">
+      <p class="section-label reveal-child">05 — contact</p>
+      <h2 class="contact-heading reveal-child">Let's build something together</h2>
+
+      <form id="contactForm" class="contact-form reveal-child" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about what you're building…" required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="form-submit">Send message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+
+      <ul class="social-links social-links--footer reveal-child" aria-label="Social links">
+        <li><a href="mailto:programmer.vaishnavi@gmail.com">email</a></li>
+        <li><a href="https://github.com/ProgrammerVaishnavi" target="_blank" rel="noopener noreferrer">github</a></li>
+        <li><a href="https://www.linkedin.com/in/vaishnavi-gupta-6628a526a/" target="_blank" rel="noopener noreferrer">linkedin</a></li>
+        <li><a href="https://leetcode.com/u/ProgrammerVaishnavi04/" target="_blank" rel="noopener noreferrer">leetcode</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-text">© <span id="year">2026</span> Vaishnavi Gupta</p>
+    <p class="footer-sub">Built with plain HTML, CSS &amp; JS.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
